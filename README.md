@@ -1,8 +1,11 @@
 <p align="center">
   You need to download the Node.js firstly:
   <a href="https://nodejs.org/uk/">Click me to open the Node.js site for start download!</a>
+  Now u need to open the project in IDE (like WebStorm or Visual Studio Code) & need open a console & type this command "npm i -g @nestjs/cli"
 </p>
-
+<p align="right">
+  <i>This message about database. U can download the MongoDB in official site if u use a local database, but if u use the mongo cluster it's not necessary</i>
+</p>
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
