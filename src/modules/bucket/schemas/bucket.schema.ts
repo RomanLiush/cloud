@@ -15,6 +15,9 @@ export class Bucket {
 
   @Prop({ unique: true })
   name: string;
+
+  @Prop()
+  bucket_folder: string;
 }
 
 export const BucketSchema = SchemaFactory.createForClass(Bucket);
