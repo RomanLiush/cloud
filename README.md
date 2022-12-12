@@ -1,4 +1,10 @@
 <p align="center">
+  You need to download the Node.js firstly:
+  <a href="https://nodejs.org/uk/">Click me to open the Node.js site for start download!</a>
+</p>
+
+
+<p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
