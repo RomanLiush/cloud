@@ -1,6 +1,13 @@
 import { IsString } from 'class-validator';
+import { Types } from 'mongoose';
 
-export class CreateBucketDto {
+export class CreateFolderDto {
   @IsString()
-  name: string;
+  folder_name: string;
+
+  // @IsString()
+  // folder_path: string;
+
+  @IsString()
+  bucket_id: Types.ObjectId;
 }

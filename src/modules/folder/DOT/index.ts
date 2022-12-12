@@ -1,1 +1,2 @@
-export * from './create-bucket.dto';
+export * from './create-folder.dto';
+export * from './rename-folder.dto';
