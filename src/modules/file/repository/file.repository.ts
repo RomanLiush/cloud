@@ -1,15 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { FilterQuery, Model, Types } from "mongoose";
+import { FilterQuery, Model, Types } from 'mongoose';
 
 import { File, FileDocument } from '../schemas';
-import { Folder } from '../../folder/schemas';
 
 @Injectable()
 export class FileRepository {
   constructor(@InjectModel(File.name) private Model: Model<FileDocument>) {}
 
-  async findOne(FilterQuery: FilterQuery<File>): Promise<Folder | null> {
+  async findOne(FilterQuery: FilterQuery<File>): Promise<File | null> {
     return this.Model.findOne(FilterQuery);
   }
 
@@ -27,7 +26,7 @@ export class FileRepository {
     file: Partial<File>,
   ): Promise<File> {
     return this.Model.findOneAndUpdate(FilterQuery, file, {
-      new: true
+      new: true,
     });
   }
 

@@ -20,11 +20,13 @@ export class File {
   file_name: string;
 
   @Prop()
-  file_size: string;
+  file_size: number;
 
   @Prop()
   mimetype: string;
 
+  @Prop()
+  file_path: string;
 }
 
 export const FileSchema = SchemaFactory.createForClass(File);

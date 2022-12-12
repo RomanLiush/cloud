@@ -15,5 +15,6 @@ import { BucketModule } from '../bucket/bucket.module';
   ],
   providers: [FolderService, FolderRepository],
   controllers: [FolderController],
+  exports: [FolderService],
 })
 export class FolderModule {}
